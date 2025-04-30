@@ -1,12 +1,8 @@
 import "bootstrap";
 import "./style.css";
-
-
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/gatobotas.jpg";
 import "./assets/img/4geeks.ico";
-
-
 function fraserandom() {
   // array de las palabras
   let who = ['El perro ', 'Mi abuela ', 'El cartero ', 'Mi pájaro '];
@@ -18,10 +14,7 @@ function fraserandom() {
   let random2 = Math.floor(Math.random() * action.length);
   let random3 = Math.floor(Math.random() * what.length);
   let random4 = Math.floor(Math.random() * when.length);
-
   // Crear frase 
   document.getElementById("excusa").innerHTML = who[random1] + action[random2] + what[random3] + when[random4];
-
 };
-
 document.getElementById("boton").addEventListener("click", fraserandom); //boton actualizar frase
