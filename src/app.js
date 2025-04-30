@@ -6,12 +6,8 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/gatobotas.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
 
-window.onload = function() {
+function fraserandom() {
   // array de las palabras
   let who = ['El perro ', 'Mi abuela ', 'El cartero ', 'Mi pájaro '];
   let action = ['comió ', 'orinó ', 'aplastó ', 'rompió '];
@@ -24,6 +20,8 @@ window.onload = function() {
   let random4 = Math.floor(Math.random() * when.length);
 
   // Crear frase 
-  document.getElementById("excuse").innerHTML = who[random1] + action[random2] + what[random3] + when[random4];
-  
-}
+  document.getElementById("excusa").innerHTML = who[random1] + action[random2] + what[random3] + when[random4];
+
+};
+
+document.getElementById("boton").addEventListener("click", fraserandom); //boton actualizar frase
